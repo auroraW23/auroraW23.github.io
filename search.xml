@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2022/12/15/%E6%8E%92%E5%BA%8F/"/>
+      <url>/2022/12/15/%E6%8E%92%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<p>冒泡</p><p>选择</p><p>sort</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/15/%E5%8A%A8%E6%80%81%E5%AE%9A%E4%B9%89%E5%86%85%E5%AD%98/"/>
+      <url>/2022/12/15/%E5%8A%A8%E6%80%81%E5%AE%9A%E4%B9%89%E5%86%85%E5%AD%98/</url>
+      
+        <content type="html"><![CDATA[<p>一维数组</p><p>二维数组</p><p>结构体动态申请</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
+      <url>/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20221215133916179.png" alt="image-20221215133916179"></p><p>进制转换</p><p>十进制转为其他进制、其他进制转为十进制</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>最长不下降子序列</title>
       <link href="/2022/12/13/%E6%9C%80%E9%95%BF%E4%B8%8D%E4%B8%8B%E9%99%8D%E5%AD%90%E5%BA%8F%E5%88%97/"/>
       <url>/2022/12/13/%E6%9C%80%E9%95%BF%E4%B8%8D%E4%B8%8B%E9%99%8D%E5%AD%90%E5%BA%8F%E5%88%97/</url>
@@ -144,6 +183,12 @@
         <content type="html"><![CDATA[<h2 id="“Hello-World-”"><a href="#“Hello-World-”" class="headerlink" title="“Hello, World!”"></a>“Hello, World!”</h2><p>这是我的第一篇博客，记录一下他的诞生。<br>接下来初步的打算是整理一下自己半个学期学的东西，发到博客上。<br>以及 祝事事顺利。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
       
     </entry>
     
