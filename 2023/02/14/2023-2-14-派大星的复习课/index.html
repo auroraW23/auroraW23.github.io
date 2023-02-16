@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>AURORA's Blog | AURORA's Blog</title><meta name="author" content="Aurora W"><meta name="copyright" content="Aurora W"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="要期末考试了，再看一遍派大星的程C复习课，记点笔记也算是复习的一部分吧。 数组和字符串关于 内存占用，strlen，sizeof, strcpy, strcat,  strcmp 字符串&#x3D;字符数组+’\0’ \0作为结束 123456789101112131415161718192021222324252627282930313233343536char a[] &#x3D; &amp;#123;&amp;#x2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AURORA&#39;s Blog">
+<meta property="og:url" content="http://example.com/2023/02/14/2023-2-14-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E5%A4%8D%E4%B9%A0%E8%AF%BE/index.html">
+<meta property="og:site_name" content="AURORA&#39;s Blog">
+<meta property="og:description" content="要期末考试了，再看一遍派大星的程C复习课，记点笔记也算是复习的一部分吧。 数组和字符串关于 内存占用，strlen，sizeof, strcpy, strcat,  strcmp 字符串&#x3D;字符数组+’\0’ \0作为结束 123456789101112131415161718192021222324252627282930313233343536char a[] &#x3D; &amp;#123;&amp;#x2">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg">
+<meta property="article:published_time" content="2023-02-14T03:35:51.018Z">
+<meta property="article:modified_time" content="2023-02-14T12:34:22.425Z">
+<meta property="article:author" content="Aurora W">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg"><link rel="shortcut icon" href="https://pic1.imgdb.cn/item/636af89916f2c2beb168ff6b.png"><link rel="canonical" href="http://example.com/2023/02/14/2023-2-14-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E5%A4%8D%E4%B9%A0%E8%AF%BE/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: Aurora W","link":"Link: ","source":"Source: AURORA's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AURORA\'s Blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-14 20:34:22'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.imgdb.cn/item/636af89916f2c2beb168ff63.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">22</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">AURORA's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-02-14T03:35:51.018Z" title="Created 2023-02-14 11:35:51">2023-02-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-02-14T12:34:22.425Z" title="Updated 2023-02-14 20:34:22">2023-02-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>5min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>要期末考试了，再看一遍派大星的程C复习课，记点笔记也算是复习的一部分吧。</p>
+<h2 id="数组和字符串"><a href="#数组和字符串" class="headerlink" title="数组和字符串"></a>数组和字符串</h2><p>关于 <strong>内存占用</strong>，<strong>strlen</strong>，<strong>sizeof</strong>, <strong>strcpy</strong>, <strong>strcat</strong>,  <strong>strcmp</strong></p>
+<p>字符串&#x3D;字符数组+’\0’</p>
+<p>\0作为结束</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> a[] = &#123;<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>&#125;; <span class="comment">//字符数组 ———&gt;a[4]</span></span><br><span class="line"><span class="type">char</span> b[] = <span class="string">&quot;abcd&quot;</span>; <span class="comment">//字符串 ——&gt;b[5]</span></span><br><span class="line"><span class="comment">//本质上是\0的区别(内存占用)</span></span><br><span class="line"></span><br><span class="line">cout&lt;&lt; <span class="string">&quot;strlen(b)=&quot;</span> &lt;&lt; <span class="built_in">strlen</span>(b) &lt;&lt; endl;</span><br><span class="line">cout&lt;&lt; <span class="string">&quot;strlen(a)=&quot;</span> &lt;&lt; <span class="built_in">strlen</span>(a) &lt;&lt; endl;</span><br><span class="line"><span class="comment">/*输出</span></span><br><span class="line"><span class="comment">strlen(b)=4</span></span><br><span class="line"><span class="comment">strlen(a)=4 */</span></span><br><span class="line"></span><br><span class="line">cout&lt;&lt; <span class="string">&quot;sizeof(b)=&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(b) &lt;&lt; endl;</span><br><span class="line">cout&lt;&lt; <span class="string">&quot;sizeof(a)=&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(a) &lt;&lt; endl;</span><br><span class="line"><span class="comment">/*输出</span></span><br><span class="line"><span class="comment">sizeof(b)=5</span></span><br><span class="line"><span class="comment">sizeof(a)=4 */</span></span><br><span class="line"></span><br><span class="line"><span class="type">char</span> c[<span class="number">50</span>] = <span class="string">&quot;a&quot;</span>; <span class="comment">//初始值的长度很关键</span></span><br><span class="line"><span class="built_in">strcpy</span>(c,<span class="string">&quot;give me&quot;</span>);<span class="comment">//一般c为普通的字符数组，大于“give me&quot;(8)时就能复制</span></span><br><span class="line">b=<span class="string">&quot; a cup of coffee&quot;</span></span><br><span class="line">cout &lt;&lt; c &lt;&lt; endl;</span><br><span class="line">cout &lt;&lt; b &lt;&lt; endl;</span><br><span class="line"><span class="comment">/*输出</span></span><br><span class="line"><span class="comment">give me</span></span><br><span class="line"><span class="comment"> a cup of coffee*/</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">strcat</span>(c,b);<span class="comment">// cat拼接，即把b拼到c上  //c的初始值很关键</span></span><br><span class="line">cout &lt;&lt; c &lt;&lt; endl;</span><br><span class="line"><span class="comment">//输出 give me a cup of coffee</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">strcpy</span>(c, <span class="string">&quot;abcab&quot;</span>);</span><br><span class="line"><span class="built_in">strcpy</span>(b, <span class="string">&quot;acd&quot;</span>);</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;strcmp(c, b)=&quot;</span> &lt;&lt; <span class="built_in">strcmp</span>(c, b) &lt;&lt; endl;</span><br><span class="line"><span class="comment">//输出 strcmp(c, b)=-1</span></span><br><span class="line"><span class="comment">//c&lt;b -&gt;-1</span></span><br><span class="line"><span class="comment">//c==b -&gt;0</span></span><br><span class="line"><span class="comment">//c&gt;b -&gt;1</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><p>动态申请内存</p>
+<p>​	stu1.name &#x3D; (char *)malloc(20);</p>
+<p>​	free(stu1-&gt;name);</p>
+<p>​	stu *stu2 &#x3D;new stu;</p>
+<p>​	delete [] stu2</p>
+<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><p>形参&#x2F;实参</p>
+<p>void：无返回值，是一个过程</p>
+<p>递归函数 要有终止条件</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>一维数组，二维数组，指针</p>
+<ul>
+<li>&amp;a&#x3D;x;</li>
+<li>*&amp;a&#x3D;a;</li>
+<li>*x&#x3D;a;</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//一维数组</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">3</span>] = &#123;<span class="number">1</span>, <span class="number">2</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++)&#123;</span><br><span class="line">		cout &lt;&lt; a[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">		cout &lt;&lt; *(a + i) &lt;&lt; <span class="string">&quot; &quot;</span>; <span class="comment">//本质上a是指针 i是偏移量</span></span><br><span class="line">		cout &lt;&lt; i[a] &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*输出</span></span><br><span class="line"><span class="comment">1 1 1</span></span><br><span class="line"><span class="comment">2 2 2</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//a[i] = *(a + i) = *(i+ a) = i[a]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二维数组</span></span><br><span class="line"><span class="type">double</span> b[<span class="number">3</span>][<span class="number">4</span>] = &#123;&#123;<span class="number">11.1</span>, <span class="number">22.2</span>&#125;, &#123;<span class="number">33.3</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">4</span>; j++) &#123;</span><br><span class="line">	cout &lt;&lt; b[i][j] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	cout &lt;&lt; *(b[i] + j) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	cout &lt;&lt; *(b + i)[j] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	cout &lt;&lt; *(*b + i) + j) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	cout &lt;&lt; *(*b + i * <span class="number">4</span> + j) &lt;&lt; <span class="string">&quot; &quot;</span>; <span class="comment">//4为宽度</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="数据交换"><a href="#数据交换" class="headerlink" title="数据交换"></a>数据交换</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a,b;</span><br><span class="line">cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">a = a * b;</span><br><span class="line">b = a / b;</span><br><span class="line">a = a / b;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="常用头文件"><a href="#常用头文件" class="headerlink" title="常用头文件"></a>常用头文件</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (x % <span class="number">2</span> == <span class="number">1</span> &amp;&amp; y % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (x % <span class="number">2</span> == <span class="number">0</span> &amp;&amp; y % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (x % <span class="number">2</span> == <span class="number">1</span> &amp;&amp; y % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> x &gt; y;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> x &lt; y;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> a = <span class="number">-1</span>, b = <span class="number">4</span>;</span><br><span class="line">  <span class="type">int</span> c[<span class="number">9</span>] = &#123;<span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">7</span>&#125;;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;max(a,b)=&quot;</span> &lt;&lt; <span class="built_in">max</span>(a, b) &lt;&lt; endl;  <span class="comment">// &lt;algorithm&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;min(a,b)=&quot;</span> &lt;&lt; <span class="built_in">min</span>(a, b) &lt;&lt; endl;  <span class="comment">// &lt;algorithm&gt;</span></span><br><span class="line">  <span class="built_in">sort</span>(c, c + <span class="number">9</span>, cmp);                       <span class="comment">// &lt;algorithm&gt;</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i : c) &#123;</span><br><span class="line">    cout &lt;&lt; i &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  cout &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;---------------------&quot;</span> &lt;&lt; endl;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;abs(a)=&quot;</span> &lt;&lt; <span class="built_in">abs</span>(a) &lt;&lt; endl;       <span class="comment">// &lt;cmath&gt; or &lt;math.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;sqrt(b)=&quot;</span> &lt;&lt; <span class="built_in">sqrt</span>(b) &lt;&lt; endl;     <span class="comment">// &lt;cmath&gt; or &lt;math.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;pow(b,2)=&quot;</span> &lt;&lt; <span class="built_in">pow</span>(b, <span class="number">2</span>) &lt;&lt; endl;  <span class="comment">// &lt;cmath&gt; or &lt;math.h&gt;</span></span><br><span class="line"></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;---------------------&quot;</span> &lt;&lt; endl;</span><br><span class="line">  <span class="type">char</span> d = <span class="string">&#x27;a&#x27;</span>, e = <span class="string">&#x27;1&#x27;</span>, f = <span class="string">&#x27;&amp;&#x27;</span>, g = <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">  cout &lt;&lt; <span class="built_in">isalnum</span>(d) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isalnum</span>(e) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isalnum</span>(f)</span><br><span class="line">       &lt;&lt; endl;  <span class="comment">// &lt;cctype&gt; or &lt;ctpye.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="built_in">isalpha</span>(d) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isalpha</span>(e) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isalpha</span>(f)</span><br><span class="line">       &lt;&lt; endl;  <span class="comment">// &lt;cctype&gt; or &lt;ctpye.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="built_in">isdigit</span>(d) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isdigit</span>(e) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">isdigit</span>(f)</span><br><span class="line">       &lt;&lt; endl;  <span class="comment">// &lt;cctype&gt; or &lt;ctpye.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;tolower(g)=&quot;</span> &lt;&lt; <span class="built_in">tolower</span>(g) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">char</span>(<span class="built_in">tolower</span>(g))</span><br><span class="line">       &lt;&lt; endl;  <span class="comment">// &lt;cctype&gt; or &lt;ctpye.h&gt;</span></span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;toupper(d)=&quot;</span> &lt;&lt; <span class="built_in">toupper</span>(d) &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; <span class="built_in">char</span>(<span class="built_in">toupper</span>(d))</span><br><span class="line">       &lt;&lt; endl;  <span class="comment">// &lt;cctype&gt; or &lt;ctpye.h&gt;</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">Aurora W</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/02/14/2023-2-14-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E5%A4%8D%E4%B9%A0%E8%AF%BE/">http://example.com/2023/02/14/2023-2-14-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E5%A4%8D%E4%B9%A0%E8%AF%BE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/01/03/2023-1-3-%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%8C%83%E5%9B%B4%E5%8C%BA%E9%97%B4/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">数组和字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-text">结构体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="toc-text">自定义函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2"><span class="toc-text">数据交换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-text">常用头文件</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://pic1.imgdb.cn/item/636af95216f2c2beb169aa05.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Aurora W</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
