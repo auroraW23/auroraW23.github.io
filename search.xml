@@ -302,25 +302,6 @@
     
     
     <entry>
-      <title>看视频</title>
-      <link href="/2022/12/28/%E7%9C%8B%E8%A7%86%E9%A2%91/"/>
-      <url>/2022/12/28/%E7%9C%8B%E8%A7%86%E9%A2%91/</url>
-      
-        <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>张老师想看n个视频。每个视频只有一分钟长，但其大小可能是任意的。第i个视频的大小为aiMB。所有视频都发布在互联网上。应该先下载视频，然后才能观看。张老师的宽带网速很慢，下载1MB的数据需要1分钟，因此下载第i个视频需要ai分钟。<br>张老师的电脑有一个 m MB的硬盘用于存储下载的视频。一旦张老师开始下载大小为s的视频，硬盘上的 s MB将立即被占用。如果剩余空间小于s MB，则需要先释放所需空间之前再开始下载。ai≤m，因此每个视频都可以存的下。视频开始下载后就不能中断。不允许同时下载多个视频。<br>当视频完全下载到硬盘上时张老师就可以观看视频。观看每个视频要1分钟，而且不占用网络，因此，张老师可以在观看当前视频的同时开始下载另一个视频。<br>当张老师看完视频后，他可以马上删除硬盘上的视频，删除视频所需的时间可以忽略不计。<br>问：张老师最快看完所有视频的时间是多少。</p><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>第一行包含两个整数n和m（1≤n≤2*105；1≤m≤109），分别是张老师想要观看的视频数量和硬盘大小。</p><p>第二行包含n个整数a1，a2，…，an（1≤ai≤m）-视频的大小。</p><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>输出一个整数-观看所有n个视频所需的最短时间。</p><p>样例一输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 6</span><br><span class="line">1 2 3 4 5</span><br></pre></td></tr></table></figure><p>样例一输出</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure><p>样例二输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4 3</span><br><span class="line">1 3 2 3</span><br></pre></td></tr></table></figure><p>样例二输出</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> cpp </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>素数问题</title>
       <link href="/2022/12/28/%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98/"/>
       <url>/2022/12/28/%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98/</url>
@@ -345,6 +326,25 @@
       <url>/2022/12/28/%E8%BD%AC%E8%BF%9B%E5%88%B6%E8%B4%A8%E6%95%B0/</url>
       
         <content type="html"><![CDATA[<p>现在给你一个数x，然后确定进制B(2&lt;&#x3D;B&lt;&#x3D;16)使得x是质数，输出所有满足条件的B，如果没有满足条件的B，则输出0。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">bool isPrime(long long a)</span><br><span class="line">&#123;</span><br><span class="line">    if(a&lt;2)return 0;</span><br><span class="line">    if(a&lt;4)return 1;</span><br><span class="line">    if(a%2==0)return 0;</span><br><span class="line">    for(int i=3;i*i&lt;=a;i+=2)</span><br><span class="line">        if(a%i==0)return 0;</span><br><span class="line">    return 1;</span><br><span class="line">&#125;</span><br><span class="line">long long xtoten(int a,int x)</span><br><span class="line">&#123;</span><br><span class="line">long long s=0,n=0;</span><br><span class="line">while(a)</span><br><span class="line">&#123;</span><br><span class="line">if(a%10&gt;x-1) return 0;//进位 </span><br><span class="line">s+=a%10*pow(x,n);</span><br><span class="line">a/=10;</span><br><span class="line">n++;</span><br><span class="line">&#125;</span><br><span class="line">return s;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">int x,flag=0;</span><br><span class="line">cin&gt;&gt;x;</span><br><span class="line">for(int i=2;i&lt;=16;i++)</span><br><span class="line">&#123;</span><br><span class="line">if(isPrime(xtoten(x,i)))&#123;</span><br><span class="line">cout&lt;&lt;i&lt;&lt;&quot; &quot;;flag=1;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">if(!flag)cout&lt;&lt;0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cpp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>看视频</title>
+      <link href="/2022/12/28/%E7%9C%8B%E8%A7%86%E9%A2%91/"/>
+      <url>/2022/12/28/%E7%9C%8B%E8%A7%86%E9%A2%91/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>张老师想看n个视频。每个视频只有一分钟长，但其大小可能是任意的。第i个视频的大小为aiMB。所有视频都发布在互联网上。应该先下载视频，然后才能观看。张老师的宽带网速很慢，下载1MB的数据需要1分钟，因此下载第i个视频需要ai分钟。<br>张老师的电脑有一个 m MB的硬盘用于存储下载的视频。一旦张老师开始下载大小为s的视频，硬盘上的 s MB将立即被占用。如果剩余空间小于s MB，则需要先释放所需空间之前再开始下载。ai≤m，因此每个视频都可以存的下。视频开始下载后就不能中断。不允许同时下载多个视频。<br>当视频完全下载到硬盘上时张老师就可以观看视频。观看每个视频要1分钟，而且不占用网络，因此，张老师可以在观看当前视频的同时开始下载另一个视频。<br>当张老师看完视频后，他可以马上删除硬盘上的视频，删除视频所需的时间可以忽略不计。<br>问：张老师最快看完所有视频的时间是多少。</p><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>第一行包含两个整数n和m（1≤n≤2*105；1≤m≤109），分别是张老师想要观看的视频数量和硬盘大小。</p><p>第二行包含n个整数a1，a2，…，an（1≤ai≤m）-视频的大小。</p><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>输出一个整数-观看所有n个视频所需的最短时间。</p><p>样例一输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 6</span><br><span class="line">1 2 3 4 5</span><br></pre></td></tr></table></figure><p>样例一输出</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure><p>样例二输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4 3</span><br><span class="line">1 3 2 3</span><br></pre></td></tr></table></figure><p>样例二输出</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
@@ -435,6 +435,25 @@
     
     
     <entry>
+      <title>进制转换</title>
+      <link href="/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
+      <url>/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20221215133916179.png" alt="image-20221215133916179"></p><p>进制转换</p><p>十进制转为其他进制、其他进制转为十进制</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cpp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>排序</title>
       <link href="/2022/12/15/%E6%8E%92%E5%BA%8F/"/>
       <url>/2022/12/15/%E6%8E%92%E5%BA%8F/</url>
@@ -454,11 +473,11 @@
     
     
     <entry>
-      <title>进制转换</title>
-      <link href="/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
-      <url>/2022/12/15/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</url>
+      <title>求最大公约数</title>
+      <link href="/2022/12/13/%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
+      <url>/2022/12/13/%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20221215133916179.png" alt="image-20221215133916179"></p><p>进制转换</p><p>十进制转为其他进制、其他进制转为十进制</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> a,b,t;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line"><span class="keyword">if</span>(a&lt;b)</span><br><span class="line">&#123;</span><br><span class="line">t=a;</span><br><span class="line">a=b;</span><br><span class="line">b=t;<span class="comment">//swap(a,b)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> r=a%b;</span><br><span class="line"><span class="keyword">while</span>(r)</span><br><span class="line">&#123;</span><br><span class="line">a=b;</span><br><span class="line">b=r;</span><br><span class="line">r=a%b;</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="辗转相减法-效率低于辗转相除法"><a href="#辗转相减法-效率低于辗转相除法" class="headerlink" title="辗转相减法(效率低于辗转相除法)"></a>辗转相减法(效率低于辗转相除法)</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b,t;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="keyword">if</span>(a&lt;b)</span><br><span class="line">    &#123;</span><br><span class="line">        t=a;</span><br><span class="line">        a=b;</span><br><span class="line">        b=t;<span class="comment">//swap(a,b)</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="type">int</span> r=a-b;</span><br><span class="line"><span class="keyword">while</span>(r)</span><br><span class="line">&#123;</span><br><span class="line">        a=b;</span><br><span class="line">        b=r;</span><br><span class="line">        <span class="keyword">if</span>(a&lt;b)<span class="built_in">swap</span>(a,b);<span class="comment">//需要保证大数-小数</span></span><br><span class="line">        r=a-b;</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> q)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(p&lt;q)<span class="built_in">swap</span>(p,q);</span><br><span class="line"><span class="keyword">if</span>(p%q==<span class="number">0</span>) <span class="keyword">return</span> q;<span class="comment">//if(q==0) return p;</span></span><br><span class="line"><span class="keyword">return</span> <span class="built_in">gcd</span>(q,p%q);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;<span class="built_in">gcd</span>(a,b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
@@ -484,25 +503,6 @@
         <tags>
             
             <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>求最大公约数</title>
-      <link href="/2022/12/13/%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
-      <url>/2022/12/13/%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> a,b,t;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line"><span class="keyword">if</span>(a&lt;b)</span><br><span class="line">&#123;</span><br><span class="line">t=a;</span><br><span class="line">a=b;</span><br><span class="line">b=t;<span class="comment">//swap(a,b)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> r=a%b;</span><br><span class="line"><span class="keyword">while</span>(r)</span><br><span class="line">&#123;</span><br><span class="line">a=b;</span><br><span class="line">b=r;</span><br><span class="line">r=a%b;</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="辗转相减法-效率低于辗转相除法"><a href="#辗转相减法-效率低于辗转相除法" class="headerlink" title="辗转相减法(效率低于辗转相除法)"></a>辗转相减法(效率低于辗转相除法)</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b,t;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="keyword">if</span>(a&lt;b)</span><br><span class="line">    &#123;</span><br><span class="line">        t=a;</span><br><span class="line">        a=b;</span><br><span class="line">        b=t;<span class="comment">//swap(a,b)</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="type">int</span> r=a-b;</span><br><span class="line"><span class="keyword">while</span>(r)</span><br><span class="line">&#123;</span><br><span class="line">        a=b;</span><br><span class="line">        b=r;</span><br><span class="line">        <span class="keyword">if</span>(a&lt;b)<span class="built_in">swap</span>(a,b);<span class="comment">//需要保证大数-小数</span></span><br><span class="line">        r=a-b;</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> q)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(p&lt;q)<span class="built_in">swap</span>(p,q);</span><br><span class="line"><span class="keyword">if</span>(p%q==<span class="number">0</span>) <span class="keyword">return</span> q;<span class="comment">//if(q==0) return p;</span></span><br><span class="line"><span class="keyword">return</span> <span class="built_in">gcd</span>(q,p%q);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;<span class="built_in">gcd</span>(a,b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> cpp </tag>
             
         </tags>
       
